@@ -1,0 +1,1 @@
+"This is the input homework for Friday, October 4, 2019."
