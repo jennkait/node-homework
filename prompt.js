@@ -6,7 +6,8 @@ const rl = readline.createInterface({
 
 rl.question("What's your name?", function(name) {
     rl.question("Where are you from?", function(country){
-        console.log('${name}, is a citizen of ${country}');
+        console.log(`${name}, is a citizen of ${country}`);
+        console.log(name + ", is a citizen of " +country);
         rl.close();
     });
 });
