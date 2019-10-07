@@ -1,15 +1,14 @@
 var http = require('http');
-//create a server object:
 http.createServer(function (req, res) {
- res.writeHead(200, {'Content-Type': 'text/html'}); // http header
+ res.writeHead(200, {'Content-Type': 'text/html'});
 var url = req.url;
  if(url ==='/about'){
-    res.write(`<h1>About Kaitlyn's Node Server<h1>`); //write a response
-    res.end(); //end the response
+    res.write(`<h1>About Kaitlyn's Node Server<h1>`);
+    res.end();
  }else{
-    res.write('<h1>Hello World!<h1>'); //write a response
-    res.end(); //end the response
+    res.write('<h1>Hello World!<h1>'); 
+    res.end(); 
  }
 }).listen(8080, function(){
- console.log("server start at port 8080"); //the server object listens on port 3000
+ console.log("server start at port 8080");
 });
